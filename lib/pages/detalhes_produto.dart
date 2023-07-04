@@ -3,7 +3,7 @@ import 'package:app_lista_compras_produtos/components/botao.dart';
 import 'package:app_lista_compras_produtos/components/item.dart';
 import 'package:app_lista_compras_produtos/models/produto_model.dart';
 import 'package:app_lista_compras_produtos/pages/editar_produto.dart';
-import 'package:app_lista_compras_produtos/pages/lista_produtos.dart';
+import 'package:app_lista_compras_produtos/pages/home_page.dart';
 import 'package:app_lista_compras_produtos/providers/produto_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -98,7 +98,7 @@ class _DetalhesProdutoState extends State<DetalhesProduto> {
                           Navigator.pop(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const ListaProdutos()));
+                                  builder: (context) => const HomePage()));
                         },
                       );
                     },
