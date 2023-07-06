@@ -1,5 +1,6 @@
 import 'package:app_lista_compras_produtos/components/aviso_dialog.dart';
 import 'package:app_lista_compras_produtos/models/produto_model.dart';
+import 'package:app_lista_compras_produtos/pages/busca_produto2.dart';
 import 'package:app_lista_compras_produtos/pages/detalhes_produto.dart';
 import 'package:app_lista_compras_produtos/pages/novo_produto.dart';
 import 'package:app_lista_compras_produtos/providers/produto_provider.dart';
@@ -38,7 +39,17 @@ class _HomePageState extends State<HomePage> {
             },
             iconSize: 32,
             icon: const Icon(Icons.search),
-          )
+          ),
+          IconButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const BuscaProduto2()),
+              );
+            },
+            iconSize: 32,
+            icon: const Icon(Icons.manage_search),
+          ),
         ],
       ),
       body: Consumer<ProdutoProvider>(
