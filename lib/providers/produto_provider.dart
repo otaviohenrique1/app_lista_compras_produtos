@@ -64,7 +64,7 @@ class ProdutoProvider extends ChangeNotifier {
     buscaTodos();
   }
 
-  buscaTodos() async {
+  Future<void> buscaTodos() async {
     _listaProdutos = await ProdutoDao().findAll();
     notifyListeners();
   }

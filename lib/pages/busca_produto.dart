@@ -75,7 +75,7 @@ class _BuscaProdutoState extends State<BuscaProduto> {
           ),
           ListView.builder(
             shrinkWrap: true,
-            itemCount: 40,
+            itemCount: 1,
             itemBuilder: (context, index) {
               return Column(
                 children: [
