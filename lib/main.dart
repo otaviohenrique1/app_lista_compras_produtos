@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:app_lista_compras_produtos/providers/produto_provider.dart';
-import 'package:app_lista_compras_produtos/pages/home_page.dart';
+import 'package:app_lista_compras_produtos/pages/home_page2.dart';
 
 void main() {
   runApp(
@@ -35,7 +35,7 @@ class App extends StatelessWidget {
           ),
         ),
       ),
-      home: const HomePage(),
+      home: const HomePage2(),
     );
   }
 }
